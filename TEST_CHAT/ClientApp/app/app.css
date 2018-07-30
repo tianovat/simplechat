@@ -1,0 +1,19 @@
+﻿.container {
+    display: flex;
+    flex-direction: column;
+}
+.container usermenu-app {
+    flex: initial;
+}
+.container .horizontal-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .horizontal-container .side-bar {
+    flex: 0 1 20%
+}
+
+.container .horizontal-container .content
+    flex: 1 1 auto;
+}

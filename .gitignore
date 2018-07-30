@@ -1,0 +1,4 @@
+.vs/*
+TEST_CHAT/bin/*
+TEST_CHAT/node_modules/*
+TEST_CHAT/obj/*

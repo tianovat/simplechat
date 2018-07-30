@@ -1,0 +1,4 @@
+﻿<div *ngIf="authenticated">
+    <input type="button" value="Выйти" class="btn btn-default" (click)="logout()" />
+    <span>{{user.Name}}</span>
+</div>

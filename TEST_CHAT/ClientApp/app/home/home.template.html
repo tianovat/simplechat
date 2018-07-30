@@ -1,0 +1,21 @@
+﻿<div class="container">
+    <form (ngSubmit)="send()">
+        <div class="form-group">
+            <label for="message">Сообщение</label>
+            <input type="text" class="form-control" id="message" name="message" [(ngModel)]="message" required>
+        </div>
+        <button type="submit" class="btn btn-success">Отравить</button>
+    </form>
+    <div class="horizontal-container">
+        <div class="side-bar">
+            <userlist-app [users]="users"></userlist-app>
+        </div>
+        <div class="content">
+            <messagelet-app [message] ="m" *ngFor="let m of messages"></messagelet-app>
+        </div>
+    </div>
+</div>
+
+
+
+

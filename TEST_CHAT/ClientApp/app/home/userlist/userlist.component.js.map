@@ -1,0 +1,1 @@
+{"version":3,"file":"userlist.component.js","sourceRoot":"","sources":["userlist.component.ts"],"names":[],"mappings":";;;;;;;;;AAAA,OAAO,EAAE,SAAS,EAAE,KAAK,EAAE,MAAM,eAAe,CAAC;AAOjD;IAAA;IAIA,CAAC;IAFY;QAAR,KAAK,EAAE;;oDAAe;IAFd,iBAAiB;QAJ7B,SAAS,CAAC;YACP,QAAQ,EAAE,cAAc;YACxB,WAAW,EAAE,0BAA0B;SAC1C,CAAC;OACW,iBAAiB,CAI7B;IAAD,wBAAC;CAAA,AAJD,IAIC;SAJY,iBAAiB"}

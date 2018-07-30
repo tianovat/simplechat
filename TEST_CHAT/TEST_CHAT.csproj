@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <AssemblyName>TEST_CHAT</AssemblyName>
+    <RootNamespace>TEST_CHAT</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app.component.ts" />
+    <None Remove="ClientApp\app\app.module.ts" />
+    <None Remove="ClientApp\app\home\messagelet\messagelet.component.ts" />
+    <None Remove="ClientApp\app\home\userlist\userlist.component.ts" />
+    <None Remove="ClientApp\app\login\login.component.ts" />
+    <None Remove="ClientApp\app\profile\profile.component.ts" />
+    <None Remove="ClientApp\app\usermenu\usermenu.component.ts" />
+    <None Remove="ClientApp\auth\authInterceptor.ts" />
+    <None Remove="ClientApp\polyfills.ts" />
+    <None Remove="ClientApp\app\services\authentication.service.ts" />
+    <None Remove="ClientApp\app\services\message.service.ts" />
+    <None Remove="ClientApp\app\services\user.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Npm" Version="3.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\app.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\home\messagelet\messagelet.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\home\userlist\userlist.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\usermenu\usermenu.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\home\home.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\login\login.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\profile\profile.component.ts" />
+    <TypeScriptCompile Include="ClientApp\auth\authInterceptor.ts" />
+    <TypeScriptCompile Include="ClientApp\polyfills.ts" />
+    <TypeScriptCompile Include="ClientApp\app\services\authentication.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\services\message.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\services\user.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\dist\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties package_1json__JSONSchema="http://json.schemastore.org/band-manifest" /></VisualStudio></ProjectExtensions>
+
+</Project>

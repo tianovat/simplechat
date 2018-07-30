@@ -1,0 +1,24 @@
+﻿
+<h1>Register Form</h1>
+<form #ngForm="ngForm" (ngSubmit)="save()">
+    <div class="form-group">
+        <label for="login">Логин</label>
+        <input type="text" class="form-control" id="login" name="login" [(ngModel)]="user.Email" required>
+    </div>
+    <div class="form-group">
+        <label for="name">Имя пользователя</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="user.Name" required>
+    </div>
+    <div class="form-group">
+        <label for="login">Пароль</label>
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.Password" required>
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword">Подтвердите пароль</label>
+        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" [(ngModel)]="ConfirmPassword" required>
+    </div>
+
+    <button [disabled]="!ngForm.valid || ConfirmPassword != user.Password" type="submit" *ngIf="authenticated" class="btn btn-success">Войти</button>
+    <button [disabled]="!ngForm.valid || ConfirmPassword != user.Password" type="submit" *ngIf="!authenticated" class="btn btn-success">Зарегистрироваться</button>
+
+</form>
